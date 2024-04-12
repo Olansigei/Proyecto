@@ -1,0 +1,81 @@
+.icon-container {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .custom-tab-bar {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .custom-tab-button {
+    color: #333333; 
+  }
+  
+  .custom-tab-button[aria-selected="true"] {
+    color: #ff0000; 
+  }
+  
+  
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.centered-image {
+  text-align: center;
+}
+
+.rounded-box {
+  background-color: #f0f0f0; /* Color de fondo de la caja */
+  border-radius: 15px; /* Esquinas redondeadas */
+  overflow: hidden; /* Para asegurarse de que las esquinas redondeadas se apliquen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  max-width: 300px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 10px; /* Espacio alrededor de la caja */
+}
+
+.rounded-box img {
+  width: 100%; /* Ajusta el ancho de la imagen dentro de la caja */
+}
+
+.productos-vendidos-container {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.productos-vendidos-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productos-vendidos-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Color del título */
+}
+
+.productos-vendidos-img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.productos-vendidos-description {
+  font-size: 18px;
+  color: #555; /* Color del texto */
+  margin-top: 15px;
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo para el botón de usuario */
+.profile-button {
+  border-radius: 50%; /* Hace que el botón tenga un contorno circular */
+}

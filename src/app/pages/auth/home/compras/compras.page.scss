@@ -1,0 +1,111 @@
+/* carrito.page.scss */
+ion-footer {
+  ion-toolbar {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+ion-button {
+  margin-left: auto; /* Alinea los botones a la derecha */
+  margin-right: 10px; /* Ajusta el espacio a la derecha */
+}
+
+.carrito-vacio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.total-row {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.precio-total {
+  text-align: right;
+  font-weight: bold;
+}
+
+.vaciar-carrito-btn {
+  margin-top: 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.carrito-vacio {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Estilos específicos para dispositivos más pequeños */
+@media only screen and (max-width: 600px) {
+  .carrito-content {
+    padding: 10px;
+  }
+
+  .producto-card {
+    width: 100%; /* O utiliza porcentajes */
+    max-width: none; /* Elimina el ancho máximo */
+  }
+
+  ion-button {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  ion-icon {
+    font-size: 24px; /* Ajusta el tamaño del icono según tus preferencias */
+    color: #ff4d4d; /* Cambia el color según tus preferencias */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+  }
+
+  /* carrito.page.scss */
+  .producto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f3f1f1;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(3, 98, 240, 0.5);
+  
+    ion-thumbnail {
+      width: 80px; /* Adjust the width as needed */
+      height: 80px; /* Adjust the height as needed */
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+  
+    ion-card-title {
+      font-family: 'Roboto', sans-serif;
+      color: #030303;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  
+    .precio {
+      font-family: 'Arial', sans-serif;
+      color: #070707;
+      font-size: 16px;
+    }
+  
+    ion-icon {
+      font-size: 24px;
+      color: #ff4d4d;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  }
+
+}
+  

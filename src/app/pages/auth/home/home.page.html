@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header title="Menú"></app-header>
+
+    <!-- Botón de usuario en la esquina superior derecha -->
+    <ion-buttons slot="end">
+      <ion-button fill="clear" routerLink="perfil" class="profile-button">
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="productos-vendidos-container">
+    <ion-card class="productos-vendidos-card">
+      <ion-card-header>
+        <ion-card-title class="productos-vendidos-title">Productos más vendidos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/88fdf9f2-7a65-46a0-b682-04068f072be8.219b9e75eb71075ee29ffa8e125dbbee.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Producto más vendido" class="productos-vendidos-img"></ion-img>
+        <p class="productos-vendidos-description">
+          Descubre nuestros productos más populares. ¡No te los pierdas!
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<div style="display: flex; justify-content: space-around; position: fixed; bottom: 0; width: 100%; background-color: rgb(49, 147, 90); padding: 10px;">
+  <div>
+    <ion-menu-toggle auto-hide="false">
+      <ion-button fill="clear" routerLink="catalogo" style="font-size: 24px;">
+        <ion-icon slot="start" name="list" color="light"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+  </div>
+
+  <div>
+    <ion-menu-toggle auto-hide="false">
+      <ion-button fill="clear" routerLink="compras" style="font-size: 24px;">
+        <ion-icon slot="start" name="cart" color="light"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+  </div>
+
+  <div>
+    <ion-menu-toggle auto-hide="false">
+      <ion-button fill="clear" routerLink="comprobante-compras" style="font-size: 24px;">
+        <ion-icon slot="start" name="document-text" color="light"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+  </div>
+</div>

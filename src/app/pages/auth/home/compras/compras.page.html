@@ -1,0 +1,55 @@
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="/"></ion-back-button>
+</ion-buttons>
+
+ <ion-content class="carrito-content">
+  <ion-grid *ngIf="productosEnCarrito.length > 0">
+    <ion-row *ngFor="let producto of productosEnCarrito">
+      <ion-col size="12" size-md="6" size-lg="4">
+
+        <div class="producto-container">
+          <ion-thumbnail>
+            <ion-img [src]="producto.imagen"></ion-img>
+          </ion-thumbnail>
+          <div class="producto-info">
+            <ion-card-header>
+              <ion-card-title>{{ producto.nombre }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <h2 class="precio">{{ producto.precio | currency }}</h2>
+            </ion-card-content>
+          </div>
+          <ion-icon class="eliminar-icon" name="trash-outline" (click)="eliminarDelCarrito(producto)"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-text *ngIf="productosEnCarrito.length === 0" class="carrito-vacio">
+    <p>Tu carrito está vacío.</p>
+  </ion-text>
+
+  <ion-row class="total-row">
+    <ion-col size="6">
+      <ion-text class="total-text">Total:</ion-text>
+    </ion-col>
+    <ion-col size="6" class="precio-total">
+      <ion-text class="precio-total-text">{{ calcularTotal() | currency }}</ion-text>
+    </ion-col>
+  </ion-row>  
+
+  <ion-button *ngIf="productosEnCarrito.length > 0" fill="outline" size="small" shape="round" color="success" (click)="realizarCompra()">
+    Comprar
+  </ion-button>
+
+  <ion-text *ngIf="compraRealizada" class="compra-mensaje">
+    <p>Compra realizada con éxito.</p>
+  </ion-text>
+
+  <ion-button *ngIf="productosEnCarrito.length > 0" fill="outline" size="small" shape="round" color="danger" (click)="eliminarTodosDelCarrito()">
+    Eliminar Todo
+  </ion-button>
+
+  <ion-button (click)="createTicket()" *ngIf="compraRealizada" fill="outline" size="small" shape="round" color="success">
+    Ver Comprobante
+  </ion-button>

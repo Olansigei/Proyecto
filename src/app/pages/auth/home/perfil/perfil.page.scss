@@ -1,0 +1,37 @@
+/* Estilos para los cards */
+.profile-card {
+    background-color: #fff; /* Color de fondo del card */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 20px; /* Margen inferior entre los cards */
+  }
+  
+  .profile-card-header {
+    background-color: #f2f2f2; /* Color de fondo del encabezado */
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+    padding: 15px; /* Espaciado interno */
+    border-top-left-radius: 10px; /* Redondear la esquina superior izquierda del encabezado */
+    border-top-right-radius: 10px; /* Redondear la esquina superior derecha del encabezado */
+  }
+  
+  .profile-card-title {
+    font-size: 20px; /* Tamaño de la fuente del título */
+  }
+  
+  .profile-card-content {
+    padding: 15px; /* Espaciado interno */
+  }
+  
+  
+  /* Estilos para los botones al centrar */
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* Estilo para el botón de cerrar sesión */
+.logout-button {
+    width: auto; /* Ancho automático para adaptarse al contenido */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding: 6px 12px; /* Espaciado interno más pequeño */
+  }
+  
